@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/aswintalk76/AshwaniNodeJs/issues"
   },
-  "homepage": "https://github.com/aswintalk76/AshwaniNodeJs#readme"
+  "homepage": "https://github.com/aswintalk76/AshwaniNodeJs#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
