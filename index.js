@@ -7,6 +7,8 @@ const morgan = require("morgan");
 
 //router import
 const authRoutes = require("./routes/authRoutes");
+const stripeRoutes = require("./routes/stripeRoutes");
+
 
 //env config
 dotenv.config();
@@ -26,6 +28,7 @@ app.use(morgan("dev"));
 
 //routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/stripe", stripeRoutes);
 
 //create a default route
 app.get("/", (req, res) => {
