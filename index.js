@@ -1,9 +1,13 @@
 const express = require("express");
 const colors = require("colors");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
 //env config
 dotenv.config();
+
+//mongodb connection
+connectDB();
 
 //rest objecct
 const app = express();
