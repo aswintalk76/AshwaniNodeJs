@@ -1,10 +1,14 @@
 const express = require("express");
 const colors = require("colors");
+const dotenv = require("dotenv");
+
+//env config
+dotenv.config();
 
 //rest objecct
 const app = express();
 const port = process.env.port || 5000;
-const DEV_MODE = process.env.port || "Development";
+const DEV_MODE = process.env.DEV_MODE || "Development";
 
 //create a default route
 app.get("/", (req, res) => {
