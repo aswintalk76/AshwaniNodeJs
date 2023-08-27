@@ -1,0 +1,19 @@
+{
+  "name": "ashwaninodejs",
+  "version": "1.0.0",
+  "description": "Advaced Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswintalk76/AshwaniNodeJs.git"
+  },
+  "author": "Ashwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswintalk76/AshwaniNodeJs/issues"
+  },
+  "homepage": "https://github.com/aswintalk76/AshwaniNodeJs#readme"
+}
