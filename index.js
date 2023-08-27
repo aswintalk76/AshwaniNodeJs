@@ -2,6 +2,8 @@ const express = require("express");
 const colors = require("colors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
+const cors = require("cors");
+const morgan = require("morgan");
 
 //env config
 dotenv.config();
@@ -13,6 +15,12 @@ connectDB();
 const app = express();
 const port = process.env.port || 5000;
 const DEV_MODE = process.env.DEV_MODE || "Development";
+
+//middelwares
+app.use(cors());
+app.use(express.json());
+app.use(morgan("dev"));
+
 
 //create a default route
 app.get("/", (req, res) => {
